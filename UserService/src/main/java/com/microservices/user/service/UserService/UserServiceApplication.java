@@ -10,6 +10,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableFeignClients
 public class UserServiceApplication {
+	
 	@Autowired
 	public RestTemplate restTemplate;
 
