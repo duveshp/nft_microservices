@@ -1,0 +1,19 @@
+server:
+  port: 8084
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: nft-service
+          uri: lb://NFTSERVICE
+          predicates:
+            - Path=/nft/**
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
