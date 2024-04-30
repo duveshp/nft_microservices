@@ -9,6 +9,14 @@ spring:
           uri: lb://NFTSERVICE
           predicates:
             - Path=/nft/**
+        - id: user-service
+          uri: lb://USERSERVICE
+          predicates:
+            - Path=/users/**
+        - id: bidding-service
+          uri: lb://BIDDINGSERVICE
+          predicates:
+            - Path=/bidding/**
 eureka:
   instance:
     prefer-ip-address: true
