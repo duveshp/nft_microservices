@@ -10,6 +10,7 @@
         <module name="NftService" />
         <module name="BiddingService" />
         <module name="ServiceRegistry" />
+        <module name="ConfigServer" />
         <module name="UserService" />
         <module name="ApiGateway" />
       </profile>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ApiGateway" options="-parameters" />
       <module name="BiddingService" options="-parameters" />
+      <module name="ConfigServer" options="-parameters" />
       <module name="NftService" options="-parameters" />
       <module name="ServiceRegistry" options="-parameters" />
       <module name="UserService" options="-parameters" />
